@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>App 2</title>
+    </head>
+    <body>
+        <div id="root"></div>
+        {{{htmlWebpackPlugin.files.runtime}}}
+        {{#each htmlWebpackPlugin.files.chunks}}
+            <script src="{{entry}}"></script>
+        {{/each}}
+        {{{ htmlWebpackPlugin.options.env.federationConfig }}}
+        <div hidden>{{{htmlWebpackPlugin.options.env.version}}}</div>
+    </body>
+</html>

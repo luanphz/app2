@@ -1,0 +1,18 @@
+{
+  "extends": "tsconfig/app.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noImplicitThis": false,
+    "rootDir": "src",
+    "paths": {
+      "src/*": ["src/*"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "../../typings",
+    "../../typings/__federated__"
+  ],
+  "exclude": ["node_modules"]
+}
